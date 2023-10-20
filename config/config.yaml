@@ -6,3 +6,9 @@ data_ingestion:
   dataset_ID: cicdataset/cicids2017
   local_data_file: artifacts/data_ingestion/cicdataset
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/cicdataset
+  merged_csv_file: artifacts/data_validation/network_traffic_anomaly.csv
+  STATUS_FILE: artifacts/data_validation/status.txt
