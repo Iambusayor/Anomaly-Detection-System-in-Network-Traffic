@@ -17,11 +17,15 @@ pyyaml = "*"
 tqdm = "*"
 ensure = "*"
 joblib = "*"
-type-pyyaml = "*"
+types-pyyaml = "*"
 scipy = "*"
 flask = "*"
 flask-cors = "*"
 fastapi = "*"
+anomalydetection = {file = ".", editable = true}
+kaggle = "*"
+opendatasets = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

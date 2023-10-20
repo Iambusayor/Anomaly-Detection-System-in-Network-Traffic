@@ -1,0 +1,8 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://www.kaggle.com/datasets/cicdataset/cicids2017
+  dataset_ID: cicdataset/cicids2017
+  local_data_file: artifacts/data_ingestion/cicdataset
+  unzip_dir: artifacts/data_ingestion

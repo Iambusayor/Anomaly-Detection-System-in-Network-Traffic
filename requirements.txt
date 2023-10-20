@@ -16,3 +16,6 @@ scipy
 Flask
 Flask-cors
 fastapi
+kaggle
+python-dotenv
+-e .
