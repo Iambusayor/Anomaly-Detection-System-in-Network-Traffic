@@ -18,11 +18,11 @@ class DataTransformation:
         """
         # missing values
         df = pd.read_csv(self.config.data_path)
-        logger.info("Shape before removing inf, -inf values and nan values: {str(df.shape)}")
+        logger.info(f"Shape before removing inf, -inf values and nan values: {df.shape}")
         df.replace([np.inf, -np.inf], np.nan, inplace=True)
         df.dropna(inplace=True)
         df.drop_duplicates(keep="first", inplace=True)
-        logger.info(f"Shape after removing duplicates, inf, -inf values and nan values: {str(df.shape)}")
+        logger.info(f"Shape after removing duplicates, inf, -inf values and nan values: {df.shape}")
         # encode categorical variables
         df.Label.replace("Web.*", "Web Attack", regex=True, inplace=True)
         df.Label.replace(r'.*Patator$', "Brute Force", regex=True,inplace=True)
