@@ -5,6 +5,7 @@ dvc
 notebook
 matplotlib
 numpy
+scikit-learn
 seaborn
 python-box
 pyYAML

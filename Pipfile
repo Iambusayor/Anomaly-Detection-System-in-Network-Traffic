@@ -26,6 +26,7 @@ anomalydetection = {file = ".", editable = true}
 kaggle = "*"
 opendatasets = "*"
 python-dotenv = "*"
+scikit-learn = "*"
 
 [dev-packages]
 

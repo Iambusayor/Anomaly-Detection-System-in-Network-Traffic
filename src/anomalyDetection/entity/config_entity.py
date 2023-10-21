@@ -16,3 +16,9 @@ class DataValidationConfig:
     unzip_data_dir: Path
     all_schema: dict
     merged_csv_file: Path
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path
+    preprocessed_data: Path
